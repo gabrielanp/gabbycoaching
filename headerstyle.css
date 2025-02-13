@@ -1,0 +1,40 @@
+/* Header */
+.header {
+    background: #800020 !important; 
+    color: #fff !important;
+    padding: 0.5em 0 !important;
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+    z-index: 1000 !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)!important ;
+}
+
+.header-container {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 90% !important;
+    margin: auto !important;
+}
+
+.header .logo {
+    font-size: 1.5em !important;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul li {
+    margin-left: 20px;
+}
+
+.navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
