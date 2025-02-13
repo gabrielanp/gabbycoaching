@@ -5,14 +5,13 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    background-color: #f4f4f4;
 }
 
 .container {
     width: 95%;
-    
     margin: auto;
 }
-
 
 /* Hero Section */
 .hero {
@@ -24,9 +23,10 @@ body {
     align-items: center;
     text-align: center;
 }
+
 .hero-content {
     background-color: #fbebf2a0;
-    padding:100px;
+    padding: 100px;
 }
 
 .hero h2 {
@@ -39,14 +39,17 @@ body {
     margin-bottom: 1em;
 }
 
+/* Buttons */
 .cta-button {
-    background:#800020;
+    background: #800020;
     color: #fff;
     padding: 0.8em 2em;
     border-radius: 5px;
     text-decoration: none;
     font-size: 1.2em;
 }
+
+/* Contact Section */
 .contact {
     display: flex;
     justify-content: center;
@@ -56,12 +59,12 @@ body {
 }
 
 .contact-box {
-    background: #fbebf2; /* Matches your theme */
+    background: #fbebf2;
     color: #000;
     text-align: center;
     padding: 2.5em;
     border-radius: 10px;
-    border:#800020;
+    border: #800020;
     max-width: 600px;
     margin: auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
@@ -77,24 +80,12 @@ body {
     margin-bottom: 1.5em;
 }
 
-.contact-box .cta-button {
-    background: #800020;
-    color: #fff;
-    padding: 0.8em 2em;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1.2em;
-    display: inline-block;
-}
-
-.contact-box .cta-button:hover {
-    background: #800020;
-}
 /* Sections */
 section {
     padding: 4em 0;
     text-align: center;
 }
+
 .about-content {
     display: flex;
     align-items: center;
@@ -106,8 +97,8 @@ section {
 
 .about-image img {
     width: 100%;
-    max-width: 600px; /* Adjust size as needed */
-    border-radius: 10px; /* Optional for styling */
+    max-width: 600px;
+    border-radius: 10px;
     display: block;
 }
 
@@ -116,10 +107,7 @@ section {
     font-size: 1.2em;
 }
 
-.about, .coaching, .testimonials {
-    text-align: center;
-}
-
+/* Services */
 .services {
     display: flex;
     gap: 20px;
@@ -137,57 +125,39 @@ blockquote {
     font-style: italic;
 }
 
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 1.5em;
-    cursor: pointer;
-}
-
-
+/* Mobile Styles */
 @media (max-width: 768px) {
-    body {
-        overflow-x: hidden;
-    }
     .hero {
-        height: 100vh; /* Reduce height */
+        height: 100vh;
         padding: 20px;
     }
 
     .hero-content {
-        padding: 40px; /* Reduce padding */
+        padding: 40px;
     }
 
     .hero h2 {
-        font-size: 2em; /* Smaller heading */
+        font-size: 2em;
     }
 
     .hero p {
-        font-size: 1.2em; /* Smaller paragraph */
+        font-size: 1.2em;
     }
 
     .cta-button {
-        font-size: 1em; /* Smaller button */
-        padding: 0.6em 1.5em; /* Adjust padding */
+        font-size: 1em;
+        padding: 0.6em 1.5em;
     }
-    .container {
-        max-width: 100%;
-        overflow: hidden;
-    }
+
     .about-content {
-            flex-direction: column;
-            text-align: center;
-        }
+        flex-direction: column;
+        text-align: center;
+    }
 
     .about-image img {
-        max-width: 300px; /* Smaller image for mobile */
+        max-width: 300px;
     }
-    * {
-        max-width: 100%;
-        box-sizing: border-box;
-    }
+
     .contact-box {
         padding: 2em;
         max-width: 90%;
@@ -199,28 +169,5 @@ blockquote {
 
     .contact-box p {
         font-size: 1em;
-    }
-    .navigation ul {
-        display: none;
-        flex-direction: column;
-        background: #800020;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    .navigation ul.active {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: block;
-        background: none;
-        border: none;
-        color: #fff;
-        font-size: 1.5em;
-        cursor: pointer;
     }
 }
