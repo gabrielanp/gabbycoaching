@@ -1,0 +1,217 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 95%;
+    
+    margin: auto;
+}
+
+/* Header */
+.header {
+    background: #596a4a;
+    color: #fff;
+    padding: 0.5em 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.header .logo {
+    font-size: 1.5em;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul li {
+    margin-left: 20px;
+}
+
+.navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+/* Hero Section */
+.hero {
+    background: url('glasses.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.cta-button {
+    background:#384435;
+    color: #fff;
+    padding: 0.8em 2em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 0;
+    text-align: center;
+}
+
+.contact-box {
+    background: #c0a50a; /* Matches your theme */
+    color: #fff;
+    text-align: center;
+    padding: 2.5em;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.contact-box h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.contact-box p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.contact-box .cta-button {
+    background: #384435;
+    color: #fff;
+    padding: 0.8em 2em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: inline-block;
+}
+
+.contact-box .cta-button:hover {
+    background: #2c3528;
+}
+/* Sections */
+section {
+    padding: 4em 0;
+    text-align: center;
+}
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    max-width: 90%;
+    margin: auto;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 600px; /* Adjust size as needed */
+    border-radius: 10px; /* Optional for styling */
+    display: block;
+}
+
+.about-text {
+    flex: 2;
+    font-size: 1.2em;
+}
+
+.about, .coaching, .testimonials {
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-item {
+    max-width: 300px;
+}
+
+/* Testimonials */
+blockquote {
+    font-size: 1.2em;
+    margin: 1em auto;
+    font-style: italic;
+}
+
+
+
+/* Footer */
+.footer {
+    background: #596a4a;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .about-content {
+            flex-direction: column;
+            text-align: center;
+        }
+
+    .about-image img {
+        max-width: 300px; /* Smaller image for mobile */
+    }
+    * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .contact-box {
+        padding: 2em;
+        max-width: 90%;
+    }
+
+    .contact-box h2 {
+        font-size: 1.8em;
+    }
+
+    .contact-box p {
+        font-size: 1em;
+    }
+}

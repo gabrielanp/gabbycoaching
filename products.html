@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coaching Services</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px 0;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 50px 0;
+        }
+
+        .section:nth-child(even) {
+            flex-direction: row-reverse; /* Alternate image position */
+        }
+
+        .text-content {
+            width: 48%;
+            text-align: left;
+        }
+
+        .text-content h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .text-content p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .appointment-button {
+            display: inline-block;
+            background-color: #3f4636;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .appointment-button:hover {
+            background-color: #384435;
+        }
+
+        .image-content {
+            width: 48%;
+        }
+
+        .image-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .text-content, .image-content {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    <div class="container">
+        <!-- Coaching Services -->
+        <div class="section">
+            <div class="text-content">
+                <h2>Personal Growth</h2>
+                <p>Work towards becoming the best version of yourself.</p>
+                <button class="appointment-button" onclick="openCalendly()">Make an Appointment</button>
+            </div>
+            <div class="image-content">
+                <img src="personal-growth.jpg" alt="Personal Growth">
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="text-content">
+                <h2>Career Transition</h2>
+                <p>Navigate career challenges with confidence and purpose.</p>
+                <button class="appointment-button" onclick="openCalendly()">Make an Appointment</button>
+            </div>
+            <div class="image-content">
+                <img src="career-transition.jpg" alt="Career Transition">
+            </div>
+        </div>
+
+        <!-- Workshops -->
+        <div class="section">
+            <div class="text-content">
+                <h2>Public Speaking</h2>
+                <p>Master the art of impactful public speaking.</p>
+                <button class="appointment-button" onclick="openCalendly()">Make an Appointment</button>
+            </div>
+            <div class="image-content">
+                <img src="public-speaking.jpg" alt="Public Speaking">
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="text-content">
+                <h2>Time Management</h2>
+                <p>Optimize your schedule for better efficiency.</p>
+                <button class="appointment-button" onclick="openCalendly()">Make an Appointment</button>
+            </div>
+            <div class="image-content">
+                <img src="time-management.jpg" alt="Time Management">
+            </div>
+        </div>
+
+        <!-- Online Courses -->
+        <div class="section">
+            <div class="text-content">
+                <h2>Self-Discipline Mastery</h2>
+                <p>Techniques for self-motivation and consistency.</p>
+                <button class="appointment-button" onclick="openCalendly()">Make an Appointment</button>
+            </div>
+            <div class="image-content">
+                <img src="self-discipline.jpg" alt="Self-Discipline Mastery">
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="text-content">
+                <h2>Work-Life Balance</h2>
+                <p>Strategies for maintaining a balanced lifestyle.</p>
+                <button class="appointment-button" onclick="openCalendly()">Make an Appointment</button>
+            </div>
+            <div class="image-content">
+                <img src="work-life-balance.jpg" alt="Work-Life Balance">
+            </div>
+        </div>
+    </div>
+    <div id="footer-placeholder"></div>
+    <script>
+         function openCalendly() {
+        window.open('https://calendly.com/gabriela-nicoleta-petrov', '_blank');
+    }
+
+    function loadComponent(id, file) {
+        fetch(file)
+            .then(response => response.text())
+            .then(data => document.getElementById(id).innerHTML = data)
+            .catch(error => console.error("Error loading component:", error));
+    }
+
+    // Load header and footer when the page loads
+    loadComponent("header-placeholder", "header.html");
+    loadComponent("footer-placeholder", "footer.html");
+    </script>
+</body>
+</html>

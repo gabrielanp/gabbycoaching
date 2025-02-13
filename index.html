@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabby Petrov | Life Coaching</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Find Clarity, Confidence, and Growth</h2>
+            <p>Life coaching tailored to your unique journey.</p>
+            <a href="#contact" class="cta-button">Start Your Journey</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="IMG-5299.JPG" alt="Gabby Petrov">
+                </div>
+                <div class="about-text">
+                    <p>I'm Gabby Petrov, a certified life coach passionate about helping you achieve your goals and unlock your full potential.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- Calendly Script -->
+<script>
+function openCalendly() {
+    window.open("https://calendly.com/YOUR-CALENDLY-LINK", "_blank");
+}
+</script>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What My Clients Say</h2>
+            <blockquote>"Gabby's coaching transformed my outlook on life and work. I now feel confident in my decisions.Gabby's coaching transformed my outlook on life and work. 
+                I now feel confident in my decisions.Gabby's coaching transformed my outlook on life and work. I now feel confident in my decisions. Gabby's coaching transformed my outlook on life and work. I now feel confident in my decisions.
+                Gabby's coaching transformed my outlook on life and work. I now feel confident in my decisions."</blockquote>
+            <blockquote>"Working with Gabby has been a life-changing experience. She has a gift for helping you see the bigger picture."</blockquote>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- Contact Section -->
+    <!-- Get in Touch Section -->
+    <section id="contact" class="contact">
+        <div class="contact-box">
+            
+            <h2>Ready to take the next step? Let's work together to unlock your full potential.</h2>
+            <p>Discover courses that challenge your mind and inspire your journey.
+
+                Enroll today and unlock the skills to achieve your dreams!</p>
+            <a href="mailto:gabriela.n.petrov@gmail.com" class="cta-button">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <script>
+        function loadComponent(id, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => document.getElementById(id).innerHTML = data)
+                .catch(error => console.error("Error loading component:", error));
+        }
+    
+        loadComponent("header-placeholder", "header.html");
+        loadComponent("footer-placeholder", "footer.html");
+    </script>
+</body>
+</html>
