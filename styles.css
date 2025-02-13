@@ -15,7 +15,7 @@ body {
 
 /* Header */
 .header {
-    background: #616161;
+    background: #800020;
     color: #fff;
     padding: 0.5em 0;
     position: fixed;
@@ -65,8 +65,8 @@ body {
     text-align: center;
 }
 .hero-content {
-    background-color: #fbebf270;
-    padding:140px;
+    background-color: #fbebf2a0;
+    padding:100px;
 }
 
 .hero h2 {
