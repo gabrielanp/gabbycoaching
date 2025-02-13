@@ -6,6 +6,18 @@
     <title>Gabby Petrov | Life Coaching</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    let menuToggle = document.querySelector(".menu-toggle");
+    let menu = document.querySelector(".navigation ul");
+
+    if (menuToggle) {
+        menuToggle.addEventListener("click", function () {
+            menu.classList.toggle("active");
+        });
+    }
+    });
+</script>
 <body>
     <!-- Header -->
     <div id="header-placeholder"></div>
@@ -80,10 +92,6 @@ function openCalendly() {
         loadComponent("header-placeholder", "header.html");
         loadComponent("footer-placeholder", "footer.html");
     </script>
-    <script>
-        document.querySelector(".menu-toggle").addEventListener("click", function () {
-            document.querySelector(".navigation ul").classList.toggle("active");
-        });
-    </script>
+    
 </body>
 </html>
