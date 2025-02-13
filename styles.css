@@ -198,7 +198,7 @@ blockquote {
         overflow-x: hidden;
     }
     .hero {
-        height: 70vh; /* Reduce height */
+        height: 100vh; /* Reduce height */
         padding: 20px;
     }
 

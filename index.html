@@ -6,18 +6,7 @@
     <title>Gabby Petrov | Life Coaching</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-    let menuToggle = document.querySelector(".menu-toggle");
-    let menu = document.querySelector(".navigation ul");
 
-    if (menuToggle) {
-        menuToggle.addEventListener("click", function () {
-            menu.classList.toggle("active");
-        });
-    }
-    });
-</script>
 <body>
     <!-- Header -->
     <div id="header-placeholder"></div>
@@ -82,14 +71,22 @@ function openCalendly() {
     <!-- Footer -->
     <div id="footer-placeholder"></div>
     <script>
-        function loadComponent(id, file) {
+        function loadComponent(id, file, callback) {
             fetch(file)
                 .then(response => response.text())
-                .then(data => document.getElementById(id).innerHTML = data)
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+                    if (callback) callback();
+                })
                 .catch(error => console.error("Error loading component:", error));
         }
     
-        loadComponent("header-placeholder", "header.html");
+        loadComponent("header-placeholder", "header.html", function () {
+            document.querySelector(".menu-toggle").addEventListener("click", function () {
+                document.querySelector(".navigation ul").classList.toggle("active");
+            });
+        });
+    
         loadComponent("footer-placeholder", "footer.html");
     </script>
     
