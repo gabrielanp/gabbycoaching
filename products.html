@@ -82,20 +82,23 @@
     </div>
     <div id="footer-placeholder"></div>
     <script>
-         function openCalendly() {
-        window.open('https://calendly.com/gabriela-nicoleta-petrov', '_blank');
-    }
-
-    function loadComponent(id, file) {
-        fetch(file)
-            .then(response => response.text())
-            .then(data => document.getElementById(id).innerHTML = data)
-            .catch(error => console.error("Error loading component:", error));
-    }
-
-    // Load header and footer when the page loads
-    loadComponent("header-placeholder", "header.html");
-    loadComponent("footer-placeholder", "footer.html");
+        function loadComponent(id, file, callback) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+                    if (callback) callback();
+                })
+                .catch(error => console.error("Error loading component:", error));
+        }
+    
+        loadComponent("header-placeholder", "header.html", function () {
+            document.querySelector(".menu-toggle").addEventListener("click", function () {
+                document.querySelector(".navigation ul").classList.toggle("active");
+            });
+        });
+    
+        loadComponent("footer-placeholder", "footer.html");
     </script>
 </body>
 </html>
