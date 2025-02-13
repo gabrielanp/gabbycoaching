@@ -80,5 +80,10 @@ function openCalendly() {
         loadComponent("header-placeholder", "header.html");
         loadComponent("footer-placeholder", "footer.html");
     </script>
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function () {
+            document.querySelector(".navigation ul").classList.toggle("active");
+        });
+    </script>
 </body>
 </html>

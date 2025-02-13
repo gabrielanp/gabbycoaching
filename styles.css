@@ -190,7 +190,27 @@ blockquote {
     body {
         overflow-x: hidden;
     }
+    .hero {
+        height: 70vh; /* Reduce height */
+        padding: 20px;
+    }
 
+    .hero-content {
+        padding: 40px; /* Reduce padding */
+    }
+
+    .hero h2 {
+        font-size: 2em; /* Smaller heading */
+    }
+
+    .hero p {
+        font-size: 1.2em; /* Smaller paragraph */
+    }
+
+    .cta-button {
+        font-size: 1em; /* Smaller button */
+        padding: 0.6em 1.5em; /* Adjust padding */
+    }
     .container {
         max-width: 100%;
         overflow: hidden;
@@ -218,5 +238,28 @@ blockquote {
 
     .contact-box p {
         font-size: 1em;
+    }
+    .navigation ul {
+        display: none;
+        flex-direction: column;
+        background: #800020;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navigation ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 1.5em;
+        cursor: pointer;
     }
 }
