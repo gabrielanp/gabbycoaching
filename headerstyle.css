@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 /* Header */
 .header {
     background: #800020;
@@ -14,8 +19,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 95%;
+    max-width: 1200px;
     margin: auto;
+    padding: 0 20px;
 }
 
 .header .logo {
@@ -28,6 +35,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 .navigation ul li {
