@@ -15,7 +15,7 @@ body {
 
 /* Header */
 .header {
-    background: #596a4a;
+    background: #0000;
     color: #fff;
     padding: 0.5em 0;
     position: fixed;
@@ -56,8 +56,8 @@ body {
 
 /* Hero Section */
 .hero {
-    background: url('glasses.jpg') no-repeat center center/cover;
-    color: #fff;
+    background: url('dandelion.jpg') no-repeat center center/cover;
+    color: #800020;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -76,7 +76,7 @@ body {
 }
 
 .cta-button {
-    background:#384435;
+    background:#800020;
     color: #fff;
     padding: 0.8em 2em;
     border-radius: 5px;
@@ -92,11 +92,12 @@ body {
 }
 
 .contact-box {
-    background: #c0a50a; /* Matches your theme */
-    color: #fff;
+    background: #fbebf2; /* Matches your theme */
+    color: #000;
     text-align: center;
     padding: 2.5em;
     border-radius: 10px;
+    border:#800020;
     max-width: 600px;
     margin: auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
@@ -113,7 +114,7 @@ body {
 }
 
 .contact-box .cta-button {
-    background: #384435;
+    background: #800020;
     color: #fff;
     padding: 0.8em 2em;
     border-radius: 5px;
@@ -123,7 +124,7 @@ body {
 }
 
 .contact-box .cta-button:hover {
-    background: #2c3528;
+    background: #800020;
 }
 /* Sections */
 section {
@@ -176,7 +177,7 @@ blockquote {
 
 /* Footer */
 .footer {
-    background: #596a4a;
+    background: #800020;
     color: #fff;
     padding: 1em 0;
     text-align: center;
